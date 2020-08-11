@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<a href="{% url 'page2' %}">Check if the user is present with email?</a>
+<form method="post">
+	{%csrf_token%}
+	Enter First name: <input type="text" name="f_name"><p>
+	Enter last name:  <input type="text" name="l_name"><p>
+	Enter Phone no:   <input type="number" name="ph_no"><p>
+	Enter email id:   <input type="email" name="email"><p>
+	Enter gender:     <input type="text" name="gender"><p>
+		<input type="submit" name="Submit">
+</form>
+</body>
+</html>

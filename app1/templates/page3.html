@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>{{message}}</h1>
+{%if profile%}
+	Name:    {{profile.f_name}} {{profile.l_name}}<br>
+	Email id:{{profile.email}}<br>
+	PHONE NO:{{profile.ph_no}}<br>
+	Gender  :{{profile.gender}}
+{%endif%}
+<a href="{% url 'page2' %}"><h4>Enter email again?</h4></a><p>
+<a href="{% url 'page1' %}"><h4>Enter user info?</h4></a>
+</form>
+</body>
+</html>
